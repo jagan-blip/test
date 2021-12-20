@@ -1,0 +1,111 @@
+body{
+    margin: 0%;
+    
+    
+    
+}
+
+.container{
+   height: 100vh;
+    display: block;
+   
+   margin-top: 2%;
+    
+    position: relative;
+    
+}
+
+#cityin {
+    
+    all: unset;
+    width: 50%;
+    
+    margin: 0% auto;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    padding-left: 1%;
+    padding-right: 1% ;
+  position: absolute;
+  right: 25%;
+ background-color: rgb(245, 245, 245);
+ border: 2px solid aquamarine;
+ border-radius: 20px;
+}
+#cityin i {
+    cursor: pointer;
+}
+#city{
+    all: unset;
+    width: 95%;
+}
+
+
+.card{
+    display: block;
+    margin-top: 5%;
+    text-align: center;
+    padding: 0%;
+    background-color: rgb(183, 252, 237);
+    height: 50%;
+    width: 50%;
+    position: absolute;
+    right: 26% ;
+    border: 1px solid aquamarine;
+    border-radius: 20px;
+    transition: 0.2s ease-in-out;
+}
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 10px 8px rgb(197, 255, 236);
+}
+
+.card > .cont{
+    
+    display: flex;
+    justify-content: space-between;
+    height: 65%;
+    padding: 1%;
+    
+}
+.card > .cont > .lcont {
+    width: 49%;
+    background-color: rgb(255, 235, 235);
+    height: 100%;
+    transition: 0.2s ease-in-out;
+}
+.card > .cont >  .rcont {
+    width: 49%;
+    background-color: rgb(214, 214, 214);
+    height: 100%;
+    transition: 0.2s ease-in-out;
+}
+
+.card:hover > .cont > .lcont{
+    border-radius: 20px;
+    background-color: rgb(143, 204, 204);
+}
+.card:hover > .cont >.rcont {
+    border-radius: 20px;
+    background-color: aqua;
+}
+
+@media screen and (max-width:600px) {
+    #cityin{
+        width: 50%;
+        margin: 0% auto;
+        padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    padding-left: 1%;
+    padding-right: 1% ;
+        position: absolute;
+        
+    }
+    #city {
+        all: unset;
+    width: 90%;
+    }
+    .card {
+        margin-top: 10%;
+    }
+    
+}
